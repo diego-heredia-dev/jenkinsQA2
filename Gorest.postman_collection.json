@@ -1,0 +1,512 @@
+{
+  "info": {
+    "_postman_id": "278e474b-e8c6-47e7-b6f2-4ebe2488ba5e",
+    "name": "Gorest",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54259558",
+    "_collection_link": "https://go.postman.co/collection/54259558-278e474b-e8c6-47e7-b6f2-4ebe2488ba5e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "List users",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const jsonResponse = JSON.parse(responseBody);\r",
+              "\r",
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "pm.test(\"Response time is less than 200ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(900);\r",
+              "});\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseURL}}/users",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "users"
+          ]
+        },
+        "description": "Generated from cURL: curl -X GET 'https://gorest.co.in/public/v2/users' \\\r\n  -H 'Accept: application/json'"
+      },
+      "response": []
+    },
+    {
+      "name": "Get user #n",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const jsonResponse = JSON.parse(responseBody);\r",
+              "\r",
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "pm.test(\"Response time is less than 200ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(900);\r",
+              "});\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseURL}}/users/{{userID}}",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "users",
+            "{{userID}}"
+          ]
+        },
+        "description": "Generated from cURL: curl -X GET 'https://gorest.co.in/public/v2/users/1' \\\r\n  -H 'Accept: application/json'"
+      },
+      "response": []
+    },
+    {
+      "name": "Create user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "let userID = pm.response.json().id;\r\npm.environment.set(\"userID\", userID);\r\n\r\nconst jsonResponse = JSON.parse(responseBody);\r\npm.test(\"Status code is 201\", function () {\r\n    pm.response.to.have.status(201);\r\n});\r\npm.test(\"Response time is less than 200ms\", function () {\r\n    pm.expect(pm.response.responseTime).to.be.below(900);\r\n});\r\n"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"name\": \"keke\", \"email\": \"keke@gmail.com\", \"gender\": \"male\", \"status\": \"active\" }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/users",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "users"
+          ]
+        },
+        "description": "Generated from cURL: curl -X POST 'https://gorest.co.in/public/v2/users' \\\r\n  -H 'Accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{ \"name\": \"Tenali Ramakrishna\", \"email\": \"tenali@example.com\", \"gender\": \"male\", \"status\": \"active\" }'"
+      },
+      "response": []
+    },
+    {
+      "name": "Update user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const jsonResponse = JSON.parse(responseBody);\r\npostman.setEnvironmentVariable('identificador', jsonResponse.id);\r\npm.test(\"Status code is 200\", function () {\r\n    pm.response.to.have.status(200);\r\n});\r\npm.test(\"Response time is less than 200ms\", function () {\r\n    pm.expect(pm.response.responseTime).to.be.below(900);\r\n});\r\n"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"name\": \"uiouio\", \"status\": \"inactive\" }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/users/{{userID}}",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "users",
+            "{{userID}}"
+          ]
+        },
+        "description": "Generated from cURL: curl -X PUT 'https://gorest.co.in/public/v2/users/1' \\\r\n  -H 'Accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{ \"name\": \"Updated Name\", \"status\": \"inactive\" }'"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 204\", function () {",
+              "    pm.response.to.have.status(204);",
+              "});",
+              "pm.test(\"Response time is less than 900ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(900);",
+              "});",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseURL}}/users/{{userID}}",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "users",
+            "{{userID}}"
+          ]
+        },
+        "description": "Generated from cURL: curl -X DELETE 'https://gorest.co.in/public/v2/users/1' \\\r\n  -H 'Accept: application/json'"
+      },
+      "response": []
+    },
+    {
+      "name": "List posts",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r\n    pm.response.to.have.status(200);\r\n});\r\n\r\npm.test(\"Response time is less than 200ms\", function () {\r\n    pm.expect(pm.response.responseTime).to.be.below(200);\r\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseURL}}/posts",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "posts"
+          ]
+        },
+        "description": "Generated from cURL: curl -X GET 'https://gorest.co.in/public/v2/posts' \\\r\n  -H 'Accept: application/json'"
+      },
+      "response": []
+    },
+    {
+      "name": "Post authored by a user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r\n    pm.response.to.have.status(200);\r\n});\r\n\r\npm.test(\"Response time is less than 200ms\", function () {\r\n    pm.expect(pm.response.responseTime).to.be.below(200);\r\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseURL}}/users/8114777/posts",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "users",
+            "8114777",
+            "posts"
+          ]
+        },
+        "description": "Generated from cURL: curl -X GET 'https://gorest.co.in/public/v2/users/8114777/posts' \\\r\n  -H 'Accept: application/json'"
+      },
+      "response": []
+    },
+    {
+      "name": "Create a post for a user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "let responseJson = pm.response.json();\r\npm.environment.set(\"postID\", responseJson.id);\r\n\r\npm.test(\"Status code is 201\", function () {\r\n    pm.response.to.have.status(201);\r\n});\r\npm.test(\"Response time is less than 200ms\", function () {\r\n    pm.expect(pm.response.responseTime).to.be.below(200);\r\n});\r\n"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"user_id\": {{userID}},\r\n    \"title\": \"Los beneficios de aprender programación\",\r\n    \"body\": \"Aprender a programar permite desarrollar el pensamiento lógico, resolver problemas de manera estructurada y crear soluciones tecnológicas. Además, es una habilidad cada vez más importante en diferentes áreas profesionales.\"\r\n}\r\n        ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/users/{{userID}}/posts",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "users",
+            "{{userID}}",
+            "posts"
+          ]
+        },
+        "description": "Generated from cURL: curl -X POST 'https://gorest.co.in/public/v2/users/8114777/posts' \\\r\n  -H 'Accept: application/json'"
+      },
+      "response": []
+    },
+    {
+      "name": "Comments on a post",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/posts/{{userID}}/comments",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "posts",
+            "{{userID}}",
+            "comments"
+          ]
+        },
+        "description": "Generated from cURL: curl -X GET 'https://gorest.co.in/public/v2/posts/8114777/comments' \\\r\n  -H 'Accept: application/json'"
+      },
+      "response": []
+    },
+    {
+      "name": "Add a comment to a post",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 201\", function () {\r\n    pm.response.to.have.status(201);\r\n});\r\n\r\npm.test(\"Response time is less than 200ms\", function () {\r\n    pm.expect(pm.response.responseTime).to.be.below(200);\r\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Diego\",\r\n  \"email\": \"keke@gmail.com\",\r\n  \"body\": \"Como estas?\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/posts/{{postID}}/comments",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "posts",
+            "{{postID}}",
+            "comments"
+          ]
+        },
+        "description": "Generated from cURL: curl -X POST 'https://gorest.co.in/public/v2/posts/8114777/comments' \\\r\n  -H 'Accept: application/json'"
+      },
+      "response": []
+    }
+  ]
+}
