@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"423df985-c7eb-45b7-8da9-a303d2751615",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.posts.posts</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-10-27 08:10:21 a. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:21]"><span>[1:21]</span> <span>List posts</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:28]"><span>[2:28]</span> <span>Post authored by a user</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:35]"><span>[3:35]</span> <span>Create a post for a user</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/posts/posts.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">APIs posts</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:21]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Posts</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:21]</span>
+                <span class="scenario-name">List posts</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2646</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:21]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://gorest.co.in/public/v2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">08:10:15.369 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer 700d0c7a86eb84028bf5cd204b11587f812f9d7cd880dc4edbdbd1d407ae9954&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req_headers = {Authorization: &#39;Bearer 700d0c7a86eb84028bf5cd204b11587f812f9d7cd880dc4edbdbd1d407ae9954&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">57</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;Utils.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def newUser =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.10">{
+    &quot;gender&quot;:&quot;male&quot;, 
+    &quot;status&quot;:&quot;active&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>newUser.name = dataGenerator.getUserRandom().name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">226</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref bg-step">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>newUser.email = dataGenerator.getUserRandom().email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">73</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;posts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2274</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">08:10:16.174 request:
+1 &gt; GET https://gorest.co.in/public/v2/posts
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: Bearer 700d0c7a86eb84028bf5cd204b11587f812f9d7cd880dc4edbdbd1d407ae9954
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+08:10:18.043 response time in milliseconds: 1869
+1 &lt; 200
+1 &lt; Date: Tue, 27 Oct 2026 12:10:15 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; content-security-policy-report-only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-YCh+qmZj2+mjIj7EeJWXqg==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
+1 &lt; etag: W/&quot;e5c6254b52202ebb1d7fe904a5ce63b2&quot;
+1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-links-current: https://gorest.co.in/public/v2/posts?page=1
+1 &lt; x-links-next: https://gorest.co.in/public/v2/posts?page=2
+1 &lt; x-links-previous: 
+1 &lt; x-pagination-limit: 10
+1 &lt; x-pagination-page: 1
+1 &lt; x-pagination-pages: 300
+1 &lt; x-pagination-total: 2998
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 300
+1 &lt; x-ratelimit-remaining: 297
+1 &lt; x-ratelimit-reset: 0
+1 &lt; x-request-id: 2d444220-5b2c-4064-9417-8e02ffd70d47
+1 &lt; x-runtime: 0.066852
+1 &lt; x-xss-protection: 0
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=4QwVd9n7CNZBqV3NBguKJTBOLF0BoipTndnKYwPXrvhehHKheYeRAAC9618e4PbtyBvxPxN%2FhIgu4NrCRUm3xu4lp0X9uc5yfSBGck2%2FLRxzD92eVAlrMAEVZdIAe7k%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: a51198b09db8b3ec-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[{&quot;id&quot;:297294,&quot;user_id&quot;:8688171,&quot;title&quot;:&quot;Mi primer post 1793102507560&quot;,&quot;body&quot;:&quot;Contenido de prueba generado por Karate - 0249e155-204d-4fc2-835a-25cdd58c0a02&quot;},{&quot;id&quot;:297293,&quot;user_id&quot;:8688169,&quot;title&quot;:&quot;Mi primer post 1793102507410&quot;,&quot;body&quot;:&quot;Contenido de prueba generado por Karate - 7a132b69-455b-4d18-8828-c9ced8bdc553&quot;},{&quot;id&quot;:297292,&quot;user_id&quot;:8688161,&quot;title&quot;:&quot;LA Odisea&quot;,&quot;body&quot;:&quot;el primer fanfic&quot;},{&quot;id&quot;:297291,&quot;user_id&quot;:8688159,&quot;title&quot;:&quot;LA Odisea&quot;,&quot;body&quot;:&quot;el primer fanfic&quot;},{&quot;id&quot;:297290,&quot;user_id&quot;:8688160,&quot;title&quot;:&quot;LA Odisea&quot;,&quot;body&quot;:&quot;el primer fanfic&quot;},{&quot;id&quot;:297289,&quot;user_id&quot;:8688158,&quot;title&quot;:&quot;LA Odisea&quot;,&quot;body&quot;:&quot;el primer fanfic&quot;},{&quot;id&quot;:297288,&quot;user_id&quot;:8688151,&quot;title&quot;:&quot;Reflexiones del día 1793102476206&quot;,&quot;body&quot;:&quot;Contenido de prueba generado por Karate - 6af67f62-da0a-4490-95e1-3df3de9896b8&quot;},{&quot;id&quot;:297287,&quot;user_id&quot;:8688145,&quot;title&quot;:&quot;Notas rápidas 1793102426684&quot;,&quot;body&quot;:&quot;Contenido de prueba generado por Karate - 2290f0f1-de68-4cac-83a9-a0077dc25121&quot;},{&quot;id&quot;:297286,&quot;user_id&quot;:8688138,&quot;title&quot;:&quot;Post de prueba 1793102371733&quot;,&quot;body&quot;:&quot;Contenido de prueba generado por Karate - 81b969bb-87f0-4b64-a008-5eed79c42229&quot;},{&quot;id&quot;:297244,&quot;user_id&quot;:8686860,&quot;title&quot;:&quot;Et alter capio decerno damno denego demoror patruus.&quot;,&quot;body&quot;:&quot;Sodalitas amet volubilis. Allatus curriculum tabgo. Tribuo aggredior anser. Video torqueo canto. Careo claustrum debeo. Consequatur ad averto. Dolorem cerno conitor. Teres odio et. Ullus accedo utrum. Defendo aptus coadunatio. Autem allatus tabernus. Vox absum crudelis. Utrum facilis amissio. Antiquus basium subvenio. Vel conforto casso. Aestas angulus credo. Vir aut vestigium. Voluptatem conventus curto.&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:28]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Posts</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:28]</span>
+                <span class="scenario-name">Post authored by a user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2598</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:28]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://gorest.co.in/public/v2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">08:10:15.369 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer 700d0c7a86eb84028bf5cd204b11587f812f9d7cd880dc4edbdbd1d407ae9954&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req_headers = {Authorization: &#39;Bearer 700d0c7a86eb84028bf5cd204b11587f812f9d7cd880dc4edbdbd1d407ae9954&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">57</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;Utils.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def newUser =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.10">{
+    &quot;gender&quot;:&quot;male&quot;, 
+    &quot;status&quot;:&quot;active&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>newUser.name = dataGenerator.getUserRandom().name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">226</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref bg-step">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>newUser.email = dataGenerator.getUserRandom().email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">71</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;posts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2214</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">08:10:16.174 request:
+1 &gt; GET https://gorest.co.in/public/v2/posts
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: Bearer 700d0c7a86eb84028bf5cd204b11587f812f9d7cd880dc4edbdbd1d407ae9954
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+08:10:17.995 response time in milliseconds: 1805
+1 &lt; 200
+1 &lt; Date: Tue, 27 Oct 2026 12:10:15 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; content-security-policy-report-only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-mcaj/7F3oAPDvD2apbioJA==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
+1 &lt; etag: W/&quot;e5c6254b52202ebb1d7fe904a5ce63b2&quot;
+1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-links-current: https://gorest.co.in/public/v2/posts?page=1
+1 &lt; x-links-next: https://gorest.co.in/public/v2/posts?page=2
+1 &lt; x-links-previous: 
+1 &lt; x-pagination-limit: 10
+1 &lt; x-pagination-page: 1
+1 &lt; x-pagination-pages: 300
+1 &lt; x-pagination-total: 2998
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 300
+1 &lt; x-ratelimit-remaining: 299
+1 &lt; x-ratelimit-reset: 0
+1 &lt; x-request-id: d5d6ff3b-2e1e-49a2-b2b7-d3f53c5156de
+1 &lt; x-runtime: 0.072194
+1 &lt; x-xss-protection: 0
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=b4s2ZbB%2FqrSdwx0IkCtxRARxhZRZDRrkC2jCfl5GClMUYkqQo0EQmVJQ1QuUTgpxxuBrYA3DO%2FNwq7PgLfzHKfkH53E2JxwjZXeUdJ5Id%2F4kQR3fU6nhYuLm9pGiC%2FQ%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: a51198b08af72c08-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[{&quot;id&quot;:297294,&quot;user_id&quot;:8688171,&quot;title&quot;:&quot;Mi primer post 1793102507560&quot;,&quot;body&quot;:&quot;Contenido de prueba generado por Karate - 0249e155-204d-4fc2-835a-25cdd58c0a02&quot;},{&quot;id&quot;:297293,&quot;user_id&quot;:8688169,&quot;title&quot;:&quot;Mi primer post 1793102507410&quot;,&quot;body&quot;:&quot;Contenido de prueba generado por Karate - 7a132b69-455b-4d18-8828-c9ced8bdc553&quot;},{&quot;id&quot;:297292,&quot;user_id&quot;:8688161,&quot;title&quot;:&quot;LA Odisea&quot;,&quot;body&quot;:&quot;el primer fanfic&quot;},{&quot;id&quot;:297291,&quot;user_id&quot;:8688159,&quot;title&quot;:&quot;LA Odisea&quot;,&quot;body&quot;:&quot;el primer fanfic&quot;},{&quot;id&quot;:297290,&quot;user_id&quot;:8688160,&quot;title&quot;:&quot;LA Odisea&quot;,&quot;body&quot;:&quot;el primer fanfic&quot;},{&quot;id&quot;:297289,&quot;user_id&quot;:8688158,&quot;title&quot;:&quot;LA Odisea&quot;,&quot;body&quot;:&quot;el primer fanfic&quot;},{&quot;id&quot;:297288,&quot;user_id&quot;:8688151,&quot;title&quot;:&quot;Reflexiones del día 1793102476206&quot;,&quot;body&quot;:&quot;Contenido de prueba generado por Karate - 6af67f62-da0a-4490-95e1-3df3de9896b8&quot;},{&quot;id&quot;:297287,&quot;user_id&quot;:8688145,&quot;title&quot;:&quot;Notas rápidas 1793102426684&quot;,&quot;body&quot;:&quot;Contenido de prueba generado por Karate - 2290f0f1-de68-4cac-83a9-a0077dc25121&quot;},{&quot;id&quot;:297286,&quot;user_id&quot;:8688138,&quot;title&quot;:&quot;Post de prueba 1793102371733&quot;,&quot;body&quot;:&quot;Contenido de prueba generado por Karate - 81b969bb-87f0-4b64-a008-5eed79c42229&quot;},{&quot;id&quot;:297244,&quot;user_id&quot;:8686860,&quot;title&quot;:&quot;Et alter capio decerno damno denego demoror patruus.&quot;,&quot;body&quot;:&quot;Sodalitas amet volubilis. Allatus curriculum tabgo. Tribuo aggredior anser. Video torqueo canto. Careo claustrum debeo. Consequatur ad averto. Dolorem cerno conitor. Teres odio et. Ullus accedo utrum. Defendo aptus coadunatio. Autem allatus tabernus. Vox absum crudelis. Utrum facilis amissio. Antiquus basium subvenio. Vel conforto casso. Aestas angulus credo. Vir aut vestigium. Voluptatem conventus curto.&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == &quot;#[]&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:35]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Posts</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:35]</span>
+                <span class="scenario-name">Create a post for a user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3461</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:35]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://gorest.co.in/public/v2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">08:10:15.369 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer 700d0c7a86eb84028bf5cd204b11587f812f9d7cd880dc4edbdbd1d407ae9954&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req_headers = {Authorization: &#39;Bearer 700d0c7a86eb84028bf5cd204b11587f812f9d7cd880dc4edbdbd1d407ae9954&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">57</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;Utils.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def newUser =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.10">{
+    &quot;gender&quot;:&quot;male&quot;, 
+    &quot;status&quot;:&quot;active&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>newUser.name = dataGenerator.getUserRandom().name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">226</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref bg-step">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>newUser.email = dataGenerator.getUserRandom().email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">73</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request newUser</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2278</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.38">08:10:16.174 request:
+1 &gt; POST https://gorest.co.in/public/v2/users
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Authorization: Bearer 700d0c7a86eb84028bf5cd204b11587f812f9d7cd880dc4edbdbd1d407ae9954
+1 &gt; Content-Length: 86
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;,&quot;name&quot;:&quot;Nathanael Metz&quot;,&quot;email&quot;:&quot;romeo50@test.com&quot;}
+
+08:10:18.069 response time in milliseconds: 1893
+1 &lt; 201
+1 &lt; Date: Tue, 27 Oct 2026 12:10:15 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 99
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; content-security-policy-report-only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-Sg9Go3Xc4kua+2TWfGAQXg==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
+1 &lt; etag: W/&quot;fac808b48d4a5a1b72eb0b06499388d3&quot;
+1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; location: https://gorest.co.in/public/v2/users/8688185
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 300
+1 &lt; x-ratelimit-remaining: 296
+1 &lt; x-ratelimit-reset: 1
+1 &lt; x-request-id: 7b0a1ec1-ad9a-4077-bf15-98f277c0ae27
+1 &lt; x-runtime: 0.066045
+1 &lt; x-xss-protection: 0
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=Zq51e6cVRtab7mGnv%2BXwwfnL6%2FgfihJJt1VK4EeYex0B3gdFWnpd%2FBDmcFO1VcNSOe1mFs7zxABDAMTxuy8taQVdmJvCvjp9NB0OmUt53b4aMhuI4rsboy8hUyaJaJ8%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: a51198b08f95af59-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;id&quot;:8688185,&quot;name&quot;:&quot;Nathanael Metz&quot;,&quot;email&quot;:&quot;romeo50@test.com&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userID = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def title = dataGenerator.getRandomTitle()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def body = dataGenerator.getRandomBody()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;, userID, &#39;posts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers req_headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.48">{
+    &quot;user_id&quot;: &quot;#(userID)&quot;,
+    &quot;title&quot;: &quot;#(title)&quot;,
+    &quot;body&quot;: &quot;#(body)&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">790</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.56">08:10:18.076 request:
+2 &gt; POST https://gorest.co.in/public/v2/users/8688185/posts
+2 &gt; Authorization: Bearer 700d0c7a86eb84028bf5cd204b11587f812f9d7cd880dc4edbdbd1d407ae9954
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 153
+2 &gt; Host: gorest.co.in
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;user_id&quot;:8688185,&quot;title&quot;:&quot;Post 10d4b4b0-d329-4048-8e8c-5a59a87ec83b&quot;,&quot;body&quot;:&quot;Contenido generado automáticamente 489bc339-54d8-4c7a-8ea0-5ad352263c0f&quot;}
+
+08:10:18.869 response time in milliseconds: 793
+2 &lt; 201
+2 &lt; Date: Tue, 27 Oct 2026 12:10:16 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 165
+2 &lt; Connection: keep-alive
+2 &lt; Cache-Control: max-age=0, private, must-revalidate
+2 &lt; content-security-policy-report-only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-lw7+A67FvGH7R83DAYwnYg==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
+2 &lt; etag: W/&quot;1a4866fce38895f12e53c8f284892ae2&quot;
+2 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+2 &lt; location: https://gorest.co.in/public/v2/posts/297297
+2 &lt; referrer-policy: strict-origin-when-cross-origin
+2 &lt; strict-transport-security: max-age=63072000; includeSubDomains
+2 &lt; vary: Origin
+2 &lt; x-content-type-options: nosniff
+2 &lt; x-frame-options: SAMEORIGIN
+2 &lt; x-permitted-cross-domain-policies: none
+2 &lt; x-ratelimit-limit: 300
+2 &lt; x-ratelimit-remaining: 295
+2 &lt; x-ratelimit-reset: 1
+2 &lt; x-request-id: dcd8cf3c-fc05-411d-9dd6-e73aac27aa0c
+2 &lt; x-runtime: 0.078415
+2 &lt; x-xss-protection: 0
+2 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+2 &lt; cf-cache-status: DYNAMIC
+2 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=PJT0IhOI%2BBIzHK0Ju0cNcrn7aS7BuvWKrrGW9GiJKJHSzXBeLaSn6BDUisqxvMkiuBIlklEd39ctMf%2FdA016DZSaN8Mj%2FrSgT4E%2BdWIIR60NuuvaLMhgH6UwV4CgxD4%3D&quot;}]}
+2 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+2 &lt; Server-Timing: cfEdge;dur=15,cfOrigin;dur=490
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: a51198badffdf194-GRU
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;id&quot;:297297,&quot;user_id&quot;:8688185,&quot;title&quot;:&quot;Post 10d4b4b0-d329-4048-8e8c-5a59a87ec83b&quot;,&quot;body&quot;:&quot;Contenido generado automáticamente 489bc339-54d8-4c7a-8ea0-5ad352263c0f&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.user_id == userID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.title == title</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.body == body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
